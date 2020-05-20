@@ -1,0 +1,64 @@
+@import "../../utils/scss/variables";
+
+.digit-formatter {
+  padding: 10px;
+  height: 81vh;
+  display: flex;
+
+  @include tablet{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @include mobile {
+    height: auto;
+    flex-direction: column;
+  }
+
+  div[class^="section-"] {
+    background: $light-background;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet{
+      flex: 1 1 40%;
+      flex-direction: row;
+    }
+
+    .details-container{
+      text-align: center;
+
+      h1{
+        font-size: 50px;
+      }
+    }
+  }
+
+  .section-one {
+    flex-grow: 1;
+    @include mobile {
+      min-height: 250px;
+    }
+  }
+  .section-two {
+    flex-grow: 2;
+
+    @include tablet{
+      order: 2;
+    }
+
+    @include mobile {
+      order: 2;
+      min-height: 500px;
+    }
+  }
+  .section-three {
+    flex-grow: 1;
+    @include mobile {
+      min-height: 250px;
+    }
+  }
+}

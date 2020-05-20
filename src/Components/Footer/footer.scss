@@ -1,0 +1,21 @@
+@import "../../utils/scss/variables";
+
+.app-footer{
+  background: $light-background;
+  min-height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  @include mobile{
+    position: relative;
+  }
+
+  .title{
+    margin: 0;
+    padding: 1em 0;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../utils/scss/variables";
+
+.app-header {
+  background: $light-background;
+  min-height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    margin: 0;
+    padding: 1em 0;
+  }
+}
